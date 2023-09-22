@@ -1,28 +1,29 @@
-import './App.css';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes, // Use Routes instead of Switch
+  Link
+} from "react-router-dom";
+
+import Navbar from './Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import MenuPage from './components/MenuPage';
+import ServicePage from './components/ServicePage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
-    </div>
+    <Router>
+      <Routes> {/* Use Routes instead of Switch */}
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/menu" element={<MenuPage />} />
+        <Route path="/service" element={<ServicePage />} />
+      </Routes>
+    </Router>
   );
 }
 

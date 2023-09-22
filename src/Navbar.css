@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+    .navbar-logo {
+      height: 4%; /* Adjust the height as needed for smaller screens */
+      width: auto; /* Allow the width to adjust automatically */
+      max-width: 100%; /* Ensure the logo doesn't exceed the container width */
+    }
+  }

@@ -1,0 +1,26 @@
+/* AboutPage.css */
+.about-page {
+    background-color: black;
+    padding: 50px 0;
+  }
+  
+  .container-1 {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container-1 {
+      padding: 10px;
+    }
+    
+    /* Stack image below paragraph on smaller screens */
+    .col-md-6 {
+      order: 1; /* Change the order to 2 to place the image below the paragraph */
+    }
+  }
+  
