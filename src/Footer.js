@@ -1,5 +1,7 @@
 import React from 'react';
-
+import {
+  Link
+} from "react-router-dom";
 function Footer() {
   const scrollToTop = () => {
     window.scrollTo(0, 0); // Scrolls to the top of the page
